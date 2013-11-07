@@ -1,0 +1,286 @@
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.exe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.exe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GadgeteerApp3.exe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GadgeteerApp3.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.IO.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Hardware.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.IO.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Hardware.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.IO.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Hardware.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.IO.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Hardware.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.IO.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Hardware.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.System.dll
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.pdb
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.IO.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Hardware.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.System.xml
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.csprojResolveAssemblyReference.cache
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\TinyCLR_DebugReferences.cache
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.Resources.resources
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.csproj.GenerateResource.Cache
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.Resources.tinyresources
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\TinyResGen.cache
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\be\GadgeteerApp3.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\be\GadgeteerApp3.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\le\GadgeteerApp3.pe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\le\GadgeteerApp3.pdbx
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.exe
+c:\users\mecolab\documents\visual studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebClient.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebServer.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Net.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.WiFi_RS21.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.SPI.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebClient.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebServer.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Net.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.WiFi_RS21.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.SPI.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebClient.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebServer.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Net.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.WiFi_RS21.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.SPI.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebClient.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebServer.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Net.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.WiFi_RS21.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.SPI.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Net.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Net.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.Serial.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.Serial.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pe
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.Serial.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.Serial.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pdbx
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.dll
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.xml
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.pdb
+C:\Users\Mecolab\Documents\Visual Studio 2012\Projects\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.exe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.exe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GadgeteerApp3.exe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GadgeteerApp3.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\le\GadgeteerApp3.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\be\GadgeteerApp3.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.Serial.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebClient.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebServer.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Hardware.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.IO.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Net.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.WiFi_RS21.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.SPI.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.Serial.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebClient.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebServer.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Hardware.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.IO.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Net.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.WiFi_RS21.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.SPI.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.Serial.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebClient.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.WebServer.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Hardware.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.IO.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.Net.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.WiFi_RS21.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\LE\Gadgeteer.SPI.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.Serial.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebClient.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.WebServer.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Hardware.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.IO.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.Net.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.WiFi_RS21.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\BE\Gadgeteer.SPI.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Hardware.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.IO.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Net.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.System.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.dll
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.Serial.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebClient.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.WebServer.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Hardware.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.IO.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.Net.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.System.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.WiFi_RS21.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.pdb
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\bin\Debug\Gadgeteer.SPI.xml
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.csprojResolveAssemblyReference.cache
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.Resources.resources
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.csproj.GenerateResource.Cache
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.Resources.tinyresources
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\TinyResGen.cache
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\be\GadgeteerApp3.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\be\GadgeteerApp3.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\le\GadgeteerApp3.pe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\le\GadgeteerApp3.pdbx
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.exe
+C:\Users\Mecolab\Desktop\Proyecto\GadgeteerApp3\GadgeteerApp3\GadgeteerApp3\obj\Debug\GadgeteerApp3.pdb
