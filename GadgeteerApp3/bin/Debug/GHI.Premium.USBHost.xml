@@ -304,56 +304,6 @@
             <br/>
             For this device, there is an internal thread that maintains the device events. The thread priority is set to the highest settings but the user is able to change this thread priority to optimize the program performance.
             </remarks>
-            <example>
-            Reading mouse movement and buttons.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_Mouse mouse;
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Mouse)
-            {
-                Debug.Print("Mouse Connected");
-                mouse = new USBH_Mouse(device);
-                mouse.MouseMove += MouseMove;
-                mouse.MouseDown += MouseDown;
-            }
-        }
-
-        static void MouseMove(USBH_Mouse sender, USBH_MouseEventArgs args)
-        {
-            Debug.Print("(x, y) = (" + sender.Cursor.X + ", " + sender.Cursor.Y + ")");
-        }
-
-        static void MouseDown(USBH_Mouse sender, USBH_MouseEventArgs args)
-        {
-            Debug.Print("Button down number: " + args.ChangedButton);
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="F:GHI.Premium.USBHost.USBH_Mouse.Cursor">
             <summary>
@@ -575,56 +525,6 @@ namespace Test
             <br/>
             For this device, there is an internal thread that maintains the device events. The thread priority is set to the highest settings but the user is able to change this thread priority to optimize the program performance.
             </remarks>
-            <example>
-            The following will read Joystick movement and buttons.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_Joystick j;
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Joystick)
-            {
-                Debug.Print("Joystick Connected");
-                j = new USBH_Joystick(device);
-                j.JoystickXYMove += JoystickXYMove;
-                j.JoystickButtonDown += JoystickButtonDown;
-            }
-        }
-
-        static void JoystickButtonDown(USBH_Joystick sender, USBH_JoystickEventArgs args)
-        {
-            Debug.Print("Button Pressed: " + args.ChangedButton);
-        }
-
-        static void JoystickXYMove(USBH_Joystick sender, USBH_JoystickEventArgs args)
-        {
-            Debug.Print("(x, y) = (" + sender.Cursor.X + ", " + sender.Cursor.Y + ")");
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="F:GHI.Premium.USBHost.USBH_Joystick.Capabilities">
             <summary>
@@ -736,107 +636,6 @@ namespace Test
             <br/>
             <strong style="color:red">Note that you should have an understanding of the USB specifications in order to use this functionality (www.usb.org).</strong><br/>
             </remarks>
-            <example>
-            The following will read a USB mouse data.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-using GHI.Premium.System;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_RawDevice mouse;
-        static USBH_RawDevice.Pipe mousePipe; // needed to read the mouse data
-        static Thread mouseThread; // polls the mouse for data
-
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Mouse)
-            {
-                Debug.Print("Mouse connected");
-                mouse = new USBH_RawDevice(device);
-
-                // Get descriptors
-                USBH_Descriptors.Configuration cd = mouse.GetConfigurationDescriptors(0);
-
-                // communication endpoint
-                USBH_Descriptors.Endpoint mouseEP = null;
-
-                // look for HID class
-                for (int i = 0; i < cd.interfaces.Length; i++)
-                {
-                    // found
-                    if (cd.interfaces[i].bInterfaceClass == 0x03)
-                    {
-                        // look for input interrupt Endpoint
-                        for (int ep = 0; ep < cd.interfaces[i].endpoints.Length; ep++)
-                        {
-                            // is it interrupt Endpoint?
-                            if (cd.interfaces[i].endpoints[ep].bmAttributes == 0x03)
-                            {
-                                // set configuration
-                                mouse.SendSetupTransfer(0x00, 0x09, cd.bConfigurationValue, 0x00);
-
-                                mouseEP = cd.interfaces[i].endpoints[ep];   // get endpoint
-                                mousePipe = mouse.OpenPipe(mouseEP);        // open pipe
-                                mousePipe.TransferTimeout = 0;              // recommended for interrupt transfers
-
-                                mouseThread = new Thread(MouseThread);      // create the polling thread
-                                mouseThread.Priority = ThreadPriority.Highest;  // we should read as fast as possible
-                                mouseThread.Start();
-
-                                break;
-                            }
-                        }
-
-                        break;
-                    }
-                }
-            }
-        }
-
-        static void MouseThread()
-        {
-            int count;
-
-            // Maximum data is wMaxPacketSize
-            byte[] mouseData = new byte[mousePipe.PipeEndpoint.wMaxPacketSize];
-
-            // Read every bInterval
-            while (true)
-            {
-                Thread.Sleep(mousePipe.PipeEndpoint.bInterval);
-
-                count = mousePipe.TransferData(mouseData, 0, mouseData.Length);
-
-                // In most mice, the second data byte is change in X direction and the third byte is change in Y direction
-                if (count > 3)
-                {
-                    Debug.Print("(dx, dy) = (" + (sbyte)(mouseData[1]) + ", " + (sbyte)(mouseData[2]) + ")");
-                }
-            }
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="M:GHI.Premium.USBHost.USBH_RawDevice.OpenPipe(GHI.Premium.USBHost.USBH_Descriptors.Endpoint)">
             <summary>
@@ -970,75 +769,6 @@ namespace Test
             <br/>
             If some of them cannot be recognized by the hardware, you can still force USB host to recognize them as in examples provided. Also, there are two Prolific drivers for different versions of the hardware. If one of them does not work, you can force USB host to use the other one.
             </remarks>
-            <example>
-            Connecting a FTDI and SiLabs serial devices. USB host recognized the FTDI but not the SiLabs one. Therefore, we will force USB host to use the SiLabs driver.
-            <code>
-<![CDATA[
-using System;
-using System.Text;
-using System.Threading;
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    class Program
-    {
-        static USBH_SerialUSB serialUSB;
-        static Thread serialUSBThread; // Prints data every second
-
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            Debug.Print("Device connected");
-
-            switch (device.TYPE)
-            {
-                case  USBH_DeviceType.Serial_FTDI: // FTDI connected
-                    serialUSB = new USBH_SerialUSB(device, 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
-                    serialUSB.Open();
-                    serialUSBThread = new Thread(SerialUSBThread);
-                    serialUSBThread.Start();
-
-                    break;
-
-                case USBH_DeviceType.Unknown: // SiLabs but not recognized
-                    // force SiLabs
-                    USBH_Device silabs = new USBH_Device(device.ID, device.INTERFACE_INDEX, USBH_DeviceType.Serial_SiLabs, device.VENDOR_ID, device.PRODUCT_ID, device.PORT_NUMBER);
-                    serialUSB = new USBH_SerialUSB(silabs, 9600, System.IO.Ports.Parity.None, 8, System.IO.Ports.StopBits.One);
-                    serialUSB.Open();
-                    serialUSBThread = new Thread(SerialUSBThread);
-                    serialUSBThread.Start();
-
-                    break;
-            }
-        }
-
-        static void SerialUSBThread()
-        {
-            // Print "Hello World!" every second.
-            byte[] data = Encoding.UTF8.GetBytes("Hello World!\r\n");
-            while(true)
-            {
-                Thread.Sleep(1000);
-
-                serialUSB.Write(data, 0, data.Length);
-            }
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="M:GHI.Premium.USBHost.USBH_SerialUSB.Finalize">
             <exclude />
@@ -1512,51 +1242,6 @@ namespace Test
             <br/>
             For this device, there is an internal thread that maintains the device events. The thread priority is set to the highest settings but the user is able to change this thread priority to optimize the program performance.
             </remarks>
-            <example>
-            Reading characters from a keyboard.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_Keyboard kb;
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Keyboard)
-            {
-                Debug.Print("Keyboard Connected");
-                kb = new USBH_Keyboard(device);
-                kb.CharDown += CharDown;
-            }
-        }
-
-        static void CharDown(USBH_Keyboard sender, USBH_KeyboardEventArgs args)
-        {
-            // Display the pressed key
-            Debug.Print(args.KeyAscii.ToString());
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="M:GHI.Premium.USBHost.USBH_Keyboard.Finalize">
             <exclude />
@@ -1633,94 +1318,6 @@ namespace Test
             <br/>
             These images can be converted to a BMP file and saved on a SD card or transferred over a network using <see cref="M:GHI.Premium.System.Util.BitmapToBMPFile(System.Byte[],System.Int32,System.Int32,System.Byte[])"/>.
             </remarks>
-            <example>
-            The following will display a video stream on the connected LCD.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-using Microsoft.SPOT;
-using Microsoft.SPOT.Hardware;
-using Microsoft.SPOT.Presentation;
-using Microsoft.SPOT.Presentation.Media;
-
-using GHI.Premium.USBHost;
-using GHI.Premium.System;
-
-class Program
-{
-    static Bitmap LCD = new Bitmap(SystemMetrics.ScreenWidth, SystemMetrics.ScreenHeight);
-
-    static USBH_Webcam cam;
-    static USBH_Webcam.ImageFormat usedFormat;
-    static Thread videoThread;
-
-    public static void Main()
-    {
-        // Subscribe to USBH events.
-        USBHostController.DeviceConnectedEvent += USBHostController_DeviceConnectedEvent;
-
-        Thread.Sleep(Timeout.Infinite);
-    }
-
-    static void USBHostController_DeviceConnectedEvent(USBH_Device device)
-    {
-        if (device.TYPE == USBH_DeviceType.Webcamera && cam == null)
-        {
-            cam = new USBH_Webcam(device);
-            cam.Disconnected += cam_Disconnected;
-
-            // get supported formats
-            USBH_Webcam.ImageFormat[] formats = cam.GetSupportedFormats();
-
-            // use the first format
-            if (formats.Length > 0)
-            {
-                usedFormat = formats[0];
-
-                // run a thread to display the video
-                videoThread = new Thread(VideoThread);
-                videoThread.Start();
-            }
-        }
-    }
-
-    public static void VideoThread()
-    {
-        try
-        {
-            cam.StartStreaming(usedFormat);
-
-            LCD.Clear();
-
-            while (true)
-            {
-                // is there a new image?
-                if (cam.IsNewImageReady())
-                {
-                    // center the image
-                    cam.DrawImage(LCD, (LCD.Width - cam.CurrentFormat.Width) / 2, (LCD.Height - cam.CurrentFormat.Height) / 2, cam.CurrentFormat.Width, cam.CurrentFormat.Height);
-
-                    LCD.Flush();
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.Print("Exception: " + e.Message);
-        }
-    }
-
-    static void cam_Disconnected(USBH_Webcam sender, USBH_WebcamEventArgs args)
-    {
-        videoThread.Abort();
-        cam.StopStreaming();
-        cam = null;
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="M:GHI.Premium.USBHost.USBH_Webcam.Finalize">
             <exclude />
@@ -1914,44 +1511,6 @@ class Program
             </summary>
             <remarks>
             This class provides the ability to access the connected devices to USB Host. The user can get a list of the available devices or subscribe to events whenever a device is connected/disconnected.<br/>
-            Here's how to subscribe to connect/disconnect events.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    class Program
-    {
-        public static void Main()
-        {
-            // Subscribe to USBH events.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-            USBHostController.DeviceDisconnectedEvent += DeviceDisconnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            Debug.Print("Device connected...");
-            Debug.Print("ID: " + device.ID + ", Interface: " + device.INTERFACE_INDEX + ", Type: " + device.TYPE);
-        }
-
-        static void DeviceDisconnectedEvent(USBH_Device device)
-        {
-            Debug.Print("Device disconnected...");
-            Debug.Print("ID: " + device.ID + ", Interface: " + device.INTERFACE_INDEX + ", Type: " + device.TYPE);
-        }
-    }
-}
-]]>
-</code>
             You can connect multiple devices and the connect/disconnect events are sent for each device with a unique <c>ID</c> among the other currently connected devices. Some devices might have multiple functions represented as interfaces. These are reported with the same <c>ID</c> but would have different interface numbers in <c>INTERFACE_INDEX</c>.<br/>
             Also, each device has a <c>TYPE</c> field if the USB host was able to recognize it. Depending on the type, the user can manipulate the device as needed.<br/>
             <br/>
@@ -1977,56 +1536,6 @@ namespace Test
             <br/>
             <strong style="color:red">Note: </strong> If you connect multiple USB devices (even for one device), it is highly recommended that you connect a self-powered USB Hub. Specific platforms might not be able to deliver enough power for all connected devices and they may not be recognized correctly or cause the system to restart or crash.<br/>
             </remarks>
-            <example>
-            Reading a USB mouse.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_Mouse mouse;
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Mouse)
-            {
-                Debug.Print("Mouse Connected");
-                mouse = new USBH_Mouse(device);
-                mouse.MouseMove += MouseMove;
-                mouse.MouseDown += MouseDown;
-            }
-        }
-
-        static void MouseMove(USBH_Mouse sender, USBH_MouseEventArgs args)
-        {
-            Debug.Print("(x, y) = (" + sender.Cursor.X + ", " + sender.Cursor.Y + ")");
-        }
-
-        static void MouseDown(USBH_Mouse sender, USBH_MouseEventArgs args)
-        {
-            Debug.Print("Button down number: " + args.ChangedButton);
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="F:GHI.Premium.USBHost.USBHostController.NO_INTERFACE_ASSOCIATED">
             <summary>
@@ -2101,58 +1610,9 @@ namespace Test
             <remarks>
             Using this class you can send any data to the printer. However, this data cannot be just a raw image for example. The user needs to communicate with the printer using its protocol/script which is dependant on the printer type. Some of the printers scripts include PCL (from HP), ESC-P (from Epson.) and Postscript.<br/>
             <br/>
-            There is an easy way to test any USB printer. First, we need the printer connected to a PC and drivers installed. Select a text or image file on PC and click print. This will bring up the "Print” window. On the drop-down menu, select the printer you need to test and then make sure you click the check-box “Print to file” as shown below.
-            <p><img src="../_PrintWindow.jpg"/></p>
+            There is an easy way to test any USB printer. First, we need the printer connected to a PC and drivers installed. Select a text or image file on PC and click print. This will bring up the "Print” window. On the drop-down menu, select the printer you need to test and then make sure you click the check-box “Print to file”.
             Now, click ok and save the the resulting file in an SD card or NETMF resourse. You just have to obtain this file later and send it using <c>USBH_Printer.SendData()</c>.
             </remarks>
-            <example>
-            Let's assume the created file earlier is a resource. We will obtain it and print it.
-            <code>
-<![CDATA[
-using System;
-using System.Threading;
-
-using Microsoft.SPOT;
-
-using GHI.Premium.USBHost;
-
-namespace Test
-{
-    public class Program
-    {
-        static USBH_Printer printer;
-        static AutoResetEvent printerConnected = new AutoResetEvent(false);
-        public static void Main()
-        {
-            // Subscribe to USBH event.
-            USBHostController.DeviceConnectedEvent += DeviceConnectedEvent;
-
-            // wait for printer to be connectoed.
-            printerConnected.WaitOne();
-
-            // Get file to print
-            byte[] buffer = Resources.GetBytes(Resources.BinaryResources.print);
-
-            // Printing can take a long time, give it a 5 seconds timeout here
-            printer.SendData(buffer, 0, buffer.Length, 5000);
-
-            // Sleep forever
-            Thread.Sleep(Timeout.Infinite);
-        }
-
-        static void DeviceConnectedEvent(USBH_Device device)
-        {
-            if (device.TYPE == USBH_DeviceType.Printer)
-            {
-                printer = new USBH_Printer(device);
-                printerConnected.Set();
-            }
-        }
-    }
-}
-]]>
-</code>
-            </example>
         </member>
         <member name="M:GHI.Premium.USBHost.USBH_Printer.Finalize">
             <exclude />

@@ -7,10 +7,14 @@ namespace GadgeteerApp3
 {
     class Gas
     {
+        const double maxGas = 2.5;
+
         private GasSense gs;
+        private Wifi wifi;
         private GT.Timer _getReading = new GT.Timer(20000);
         private GT.Timer _preheat = new GT.Timer(15000);        
-        public Gas(GasSense g){
+        public Gas(GasSense g, Wifi wifi){
+            this.wifi = wifi;
             this.gs = g;            
             _getReading.Tick += new GT.Timer.TickEventHandler(_getReading_Tick);
             _preheat.Tick += new GT.Timer.TickEventHandler(_preheat_Tick);
@@ -21,7 +25,6 @@ namespace GadgeteerApp3
         {
             gs.SetHeatingElement(true);
             _preheat.Start();
-            Debug.Print("getReading.");
         }
 
           void _preheat_Tick(GT.Timer timer)
@@ -29,26 +32,13 @@ namespace GadgeteerApp3
               _preheat.Stop();
                       
               double gs1 = gs.ReadVoltage();
-              if (gs1 > 2.5)
+              wifi.SendGasData(gs1);
+              if (gs1 > maxGas)
               {
                   gasDetected(gs1);
               }
-            
-              //Debug.Print("GS1 = " + gs1.ToString());
-              //CameraClass.displayText("GS1 = " + gs1.ToString());
-               /*
-               * Normally I would unncomment this and save the power between readings
-               * but I have seen people comment that these sensors need an initial burn-in
-               * of about 24-48 before readings stabilize.  This is a one time thing
-               * and once they are burned in (cleans up stuff from manufacturing), then
-               * you only need about 10 seconds of preheat to get a valid reading.
-               * */
-              //gasSense.SetHeatingElement(false);
-              
               
           }
-
-      
 
           public void gasDetected(double j)
           {

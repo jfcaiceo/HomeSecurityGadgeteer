@@ -16,13 +16,11 @@ namespace GadgeteerApp3
 {
     public partial class Program
     {
-        uint time = 0;
- 
         void ProgramStarted()
         {
             Wifi w = new Wifi(wifi_RS21);
             CameraClass c = new CameraClass(display_T35, camera, motion_Sensor, w);
-            Gas g = new Gas(gasSense);            
+            //Gas g = new Gas(gasSense, w);            
             Debug.Print("Program Started");
         }
     }

@@ -6,6 +6,7 @@ using GT = Gadgeteer;
 using Gadgeteer.Modules.GHIElectronics;
 using Gadgeteer;
 using System.IO;
+using System.Net;
 
 namespace GadgeteerApp3
 {
@@ -18,7 +19,8 @@ namespace GadgeteerApp3
         GT.Networking.WebEvent webEventActivateVideo;
         GT.Networking.WebEvent webEventInactivateVideo;
         GT.Networking.WebEvent webEventVideo;
-        public string host = "http://homesecurity-dev.herokuapp.com/";
+        //public string host = "http://homesecurity-dev.herokuapp.com/";
+        public string host = "http://192.168.0.107:3000/";
 
         public Wifi(Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21)
         {
@@ -42,7 +44,6 @@ namespace GadgeteerApp3
             wifi_RS21.NetworkDown += new GT.Modules.Module.NetworkModule.NetworkEventHandler(wifi_NetworkDown);
             wifi_RS21.NetworkUp += new GT.Modules.Module.NetworkModule.NetworkEventHandler(wifi_NetworkUp);
             wifi_RS21.Interface.NetworkAddressChanged += Interface_NetworkAddressChanged;
-            wifi_RS21.Interface.WirelessConnectivityChanged += Interface_WirelessConnectivityChanged;
 
             wifi_RS21.UseDHCP();
             GHI.Premium.Net.WiFiNetworkInfo[] info = null;
@@ -52,18 +53,13 @@ namespace GadgeteerApp3
 
         }
 
-        void Interface_WirelessConnectivityChanged(object sender, GHI.Premium.Net.WiFiRS9110.WirelessConnectivityEventArgs e)
-        {
-            Debug.Print("cambio de conectividad");
-            Debug.Print(e.IsConnected+"");
-        }
-
         void Interface_NetworkAddressChanged(object sender, EventArgs e)
         {
             CameraClass.displayText(wifi_RS21.Interface.NetworkInterface.IPAddress);
             Debug.Print(wifi_RS21.Interface.NetworkInterface.IPAddress);
+            /*
             WebServer.StartLocalServer(wifi_RS21.Interface.NetworkInterface.IPAddress, 80);
-            Gadgeteer.Networking.HttpRequest wc = WebClient.GetFromWeb("http://homesecurity-dev.herokuapp.com/sendIP?ip=" + wifi_RS21.Interface.NetworkInterface.IPAddress);
+            Gadgeteer.Networking.HttpRequest wc = WebClient.GetFromWeb(host+"sendIP?ip=" + wifi_RS21.Interface.NetworkInterface.IPAddress);
             webEventgetpicture = WebServer.SetupWebEvent("getpicture");
             webEventgetpicture.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventgetpicture_WebEventReceived);
 
@@ -78,8 +74,9 @@ namespace GadgeteerApp3
 
             webEventInactivateVideo = WebServer.SetupWebEvent("inactivateVideo");
             webEventInactivateVideo.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventInactivateVideo_WebEventReceived);
+             */
         }
-
+        /*
         void webEventgetpicture_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
         {
             if (CameraClass.getLastPicure() != null)
@@ -119,7 +116,7 @@ namespace GadgeteerApp3
             if (CameraClass.camera.CameraReady)
                 CameraClass.camera.TakePicture();
         }
-
+        */
         void wifi_NetworkDown(GT.Modules.Module.NetworkModule sender, GT.Modules.Module.NetworkModule.NetworkState state)
         {
             Debug.Print("Network down event");
@@ -128,69 +125,117 @@ namespace GadgeteerApp3
         void wifi_NetworkUp(GT.Modules.Module.NetworkModule sender, GT.Modules.Module.NetworkModule.NetworkState state)
         {
             Debug.Print("Network Up event");
-            Debug.Print(sender.NetworkSettings.IPAddress +"");
+            Debug.Print(sender.NetworkSettings.IPAddress + "");
         }
 
-        private void SendPicture(Picture picture)
+        public void SendPictureData(Picture picture)
         {
-            var req = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(host + "uploadFile");
-            req.Method = "POST";
-            req.ContentType = "image/bmp"; 
-            
-            req.UserAgent = "Gadgeteer";
+            if (!wifi_RS21.Interface.IsLinkConnected)
+                return;
 
-            //req.Headers.Add("X-AuthKey", AuthKey);
+            //Create parameters and get the string body
+            Param[] parameters = new Param[2];
+            parameters[0] = new Param("filename", Guid.NewGuid() + ".bmp");
+            parameters[1] = new Param("file");
+            string postData = this.GetPostData(parameters);
 
-            req.ContentLength = picture.PictureData.Length;
+            //Get the byte[]
+            System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
+            byte[][] buffers = new byte[2][];
+            buffers[0] = encoding.GetBytes(postData);
+            buffers[1] = picture.PictureData;
 
-            try
-            {
-                using (Stream s = req.GetRequestStream())
-                {
-                    s.Write(picture.PictureData, 0, picture.PictureData.Length);
-                }
-
-                using (System.Net.WebResponse resp = req.GetResponse())
-                {
-                    using (Stream respStream = resp.GetResponseStream())
-                    {
-                        byte[] respBytes = new byte[respStream.Length];
-                        respStream.Read(respBytes, 0, respBytes.Length);
-                        string respString = new string(System.Text.Encoding.UTF8.GetChars(respBytes));
-                        Debug.Print(respString);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.Print("exception : " + ex.Message);
-            }
-            finally
-            {
-                req.Dispose();
-            }
+            SendHttp(buffers, "uploadFile");
         }
 
-        public void SendPictureData()        {
-            GT.Picture picture = CameraClass.getLastPicure();
-            POSTContent postData = POSTContent.CreateBinaryBasedContent(picture.PictureData);
-            CameraClass.displayText(postData.ToString());
-            
-
-            var reqData =
-                HttpHelper.CreateHttpPostRequest(host + "uploadFile",
-                postData, "image/bmp");
-
-            reqData.ResponseReceived += new HttpRequest.ResponseHandler(reqData_ResponseReceived);
-            reqData.SendRequest();
-        }
-               
-
-        void reqData_ResponseReceived(HttpRequest sender, HttpResponse response)
+        public void SendGasData(double value)
         {
-            if (response.StatusCode != "200")
-                CameraClass.displayText(response.StatusCode);
-           
+            if (!wifi_RS21.Interface.IsLinkConnected)
+                return;
+            //Create parameters and get the string body
+            Param[] parameters = new Param[2];
+            parameters[0] = new Param("gas", value.ToString());
+            string postData = this.GetPostData(parameters);
+
+            //Get the byte[]
+            System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
+            byte[][] buffers = new byte[1][];
+            buffers[0] = encoding.GetBytes(postData);
+
+            SendHttp(buffers, "sendGas");
+        }
+
+        private void SendHttp(byte[][] buffers, string uriMethod)
+        {
+            Uri urlUri = new Uri(host + uriMethod);
+            HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(urlUri);
+            myRequest.Method = "POST";
+            myRequest.AllowWriteStreamBuffering = true;
+
+            int count = 0;
+            foreach (byte[] buffer in buffers)
+            {
+                count += buffer.Length;
+            }
+
+            // Get length of content
+            myRequest.ContentLength = count;
+
+            // Get request stream 
+            Stream newStream = myRequest.GetRequestStream();
+
+            // Send the data.
+            foreach (byte[] buffer in buffers)
+            {
+                newStream.Write(buffer, 0, buffer.Length);
+            }
+
+            // Close stream 
+            newStream.Close();
+            myRequest.GetResponse();
+        }
+
+        private string GetPostData(Param[] parameters)
+        {
+            string requestBody = "";
+            foreach (Param param in parameters)
+            {
+                requestBody += param.Key + "=";
+                if (param.Value != string.Empty)
+                {
+                    requestBody += param.Value + ";";
+                }
+            }
+            return requestBody;
+        }
+
+    }
+
+    public struct Param
+    {
+        private string key;
+        private string value;
+
+        public Param(string key)
+        {
+            this.key = key;
+            this.value = string.Empty;
+        }
+
+        public Param(string key, string value)
+        {
+            this.key = key;
+            this.value = value;
+        }
+
+        public string Key
+        {
+            get { return key; }
+        }
+
+        public string Value
+        {
+            get { return value; }
         }
     }
 }
