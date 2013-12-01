@@ -8,50 +8,52 @@ using Gadgeteer.Modules.GHIElectronics;
 
 namespace GadgeteerApp3
 {
+    public enum PhotoType { Central, Devices };
+
     public class CameraClass
     {
-        private static Gadgeteer.Modules.GHIElectronics.Display_T35 display_T35;
+        //private static Gadgeteer.Modules.GHIElectronics.Display_T35 display_T35;
 
         private GT.Picture pictureForService;
         private Gadgeteer.Modules.GHIElectronics.Camera camera;
         private Motion_Sensor motion_Sensor;
         private Wifi wifi;
-        private static bool activate = true;
+        private static bool activate = false;
         private bool sendingPicture = false;
 
-        public CameraClass(Display_T35 display_T35, Gadgeteer.Modules.GHIElectronics.Camera camera, Motion_Sensor motion_Sensor, Wifi wf)
+        public CameraClass(Gadgeteer.Modules.GHIElectronics.Camera camera, Motion_Sensor motion_Sensor, Wifi wf)
         {
             this.wifi = wf;
             this.camera = camera;
             this.camera.CurrentPictureResolution = Camera.PictureResolution.Resolution160x120;
-            CameraClass.display_T35 = display_T35;
+            //CameraClass.display_T35 = display_T35;
             this.motion_Sensor = motion_Sensor;
             this.motion_Sensor.Motion_Sensed += new GTM.Motion_Sensor.Motion_SensorEventHandler(motion_Sensor_Motion_Sensed);
             this.camera.PictureCaptured += new Camera.PictureCapturedEventHandler(camera_PictureCaptured);
             this.camera.DebugPrintEnabled = false;
         }
 
-        public static void activateSystem()
+        public static bool getActivation()
         {
-            activate = true;
+            return activate;
         }
 
-        public static void inactivateSystem()
+        public static void setActivation(bool activation)
         {
-            activate = false;
+            activate = activation;
         }
 
         public static void displayText(string text)
         {
-            display_T35.SimpleGraphics.Clear();
+            //display_T35.SimpleGraphics.Clear();
             
-            display_T35.SimpleGraphics.DisplayText(text, Resources.GetFont(Resources.FontResources.NinaB), GT.Color.White, 0, 0);
+            //display_T35.SimpleGraphics.DisplayText(text, Resources.GetFont(Resources.FontResources.NinaB), GT.Color.White, 0, 0);
         }
 
         void camera_PictureCaptured(Camera sender, GT.Picture picture)
         {
-            display_T35.SimpleGraphics.DisplayImage(picture, 0, 0);
-            wifi.SendPictureData(picture);
+            //display_T35.SimpleGraphics.DisplayImage(picture, 0, 0);
+            wifi.SendPictureData(picture.PictureData, PhotoType.Central.ToString());
             Debug.Print("foto");
             sendingPicture = false;
         }

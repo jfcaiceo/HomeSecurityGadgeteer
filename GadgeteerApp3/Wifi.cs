@@ -20,19 +20,20 @@ namespace GadgeteerApp3
         GT.Networking.WebEvent webEventInactivateVideo;
         GT.Networking.WebEvent webEventVideo;
         //public string host = "http://homesecurity-dev.herokuapp.com/";
-        public string host = "http://192.168.0.107:3000/";
+        public string host = "http://192.168.0.160:3000/";
+        GT.Timer t;
 
         public Wifi(Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21)
         {
             this.wifi_RS21 = wifi_RS21;
-            GT.Timer t = new GT.Timer(3000);
+            t = new GT.Timer(3000);
             t.Tick += new GT.Timer.TickEventHandler(start);
             t.Start();
         }
 
         void start(GT.Timer timer)
         {
-            timer.Stop();
+            t.Stop();
 
             if (!wifi_RS21.Interface.IsOpen)
                 wifi_RS21.Interface.Open();
@@ -47,9 +48,9 @@ namespace GadgeteerApp3
 
             wifi_RS21.UseDHCP();
             GHI.Premium.Net.WiFiNetworkInfo[] info = null;
-            info = wifi_RS21.Interface.Scan("Living fgb");
+            info = wifi_RS21.Interface.Scan("josef");
 
-            wifi_RS21.Interface.Join(info[0], "1234567890");
+            wifi_RS21.Interface.Join(info[0], "marcela@$1980");
 
         }
 
@@ -128,22 +129,23 @@ namespace GadgeteerApp3
             Debug.Print(sender.NetworkSettings.IPAddress + "");
         }
 
-        public void SendPictureData(Picture picture)
+        public void SendPictureData(byte[] picture, string type)
         {
             if (!wifi_RS21.Interface.IsLinkConnected)
                 return;
 
             //Create parameters and get the string body
-            Param[] parameters = new Param[2];
+            Param[] parameters = new Param[3];
             parameters[0] = new Param("filename", Guid.NewGuid() + ".bmp");
-            parameters[1] = new Param("file");
+            parameters[1] = new Param("type", type);
+            parameters[2] = new Param("file");
             string postData = this.GetPostData(parameters);
 
             //Get the byte[]
             System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
             byte[][] buffers = new byte[2][];
             buffers[0] = encoding.GetBytes(postData);
-            buffers[1] = picture.PictureData;
+            buffers[1] = picture;
 
             SendHttp(buffers, "uploadFile");
         }
