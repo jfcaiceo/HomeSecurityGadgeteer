@@ -13,14 +13,8 @@ namespace GadgeteerApp3
     public class Wifi
     {
         private Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21;
-        GT.Networking.WebEvent webEventgetpicture;
-        GT.Networking.WebEvent webEventActivate;
-        GT.Networking.WebEvent webEventInactivate;
-        GT.Networking.WebEvent webEventActivateVideo;
-        GT.Networking.WebEvent webEventInactivateVideo;
-        GT.Networking.WebEvent webEventVideo;
         //public string host = "http://homesecurity-dev.herokuapp.com/";
-        public string host = "http://192.168.0.160:3000/";
+        public string host = "http://192.168.0.146:3000/";
         GT.Timer t;
 
         public Wifi(Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21)
@@ -56,68 +50,9 @@ namespace GadgeteerApp3
 
         void Interface_NetworkAddressChanged(object sender, EventArgs e)
         {
-            CameraClass.displayText(wifi_RS21.Interface.NetworkInterface.IPAddress);
             Debug.Print(wifi_RS21.Interface.NetworkInterface.IPAddress);
-            /*
-            WebServer.StartLocalServer(wifi_RS21.Interface.NetworkInterface.IPAddress, 80);
-            Gadgeteer.Networking.HttpRequest wc = WebClient.GetFromWeb(host+"sendIP?ip=" + wifi_RS21.Interface.NetworkInterface.IPAddress);
-            webEventgetpicture = WebServer.SetupWebEvent("getpicture");
-            webEventgetpicture.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventgetpicture_WebEventReceived);
-
-            webEventActivate = WebServer.SetupWebEvent("activate");
-            webEventActivate.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventActivate_WebEventReceived);
-
-            webEventInactivate = WebServer.SetupWebEvent("inactivate");
-            webEventInactivate.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventInactivate_WebEventReceived);
-
-            webEventActivateVideo = WebServer.SetupWebEvent("activateVideo");
-            webEventActivateVideo.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventActivateVideo_WebEventReceived);
-
-            webEventInactivateVideo = WebServer.SetupWebEvent("inactivateVideo");
-            webEventInactivateVideo.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventInactivateVideo_WebEventReceived);
-             */
         }
-        /*
-        void webEventgetpicture_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            if (CameraClass.getLastPicure() != null)
-                responder.Respond(CameraClass.getLastPicure());
-        }
-
-        void webEventActivate_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            CameraClass.activateSystem();
-            responder.Respond("Sistema Activado");
-        }
-
-        void webEventInactivate_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            CameraClass.inactivateSystem();
-            responder.Respond("Sistema Desactivado");
-        }
-
-        void webEventActivateVideo_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            webEventVideo = WebServer.SetupWebEvent("getVideo", 1);
-
-            webEventVideo.WebEventReceived += new WebEvent.ReceivedWebEventHandler(webEventGetPicturesMulti_WebEventReceived);
-            responder.Respond("Video Activado");
-        }
-
-        void webEventInactivateVideo_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            WebServer.DisableWebEvent(webEventVideo);
-            responder.Respond("Video Desactivado");
-        }
-
-        void webEventGetPicturesMulti_WebEventReceived(string path, WebServer.HttpMethod method, Responder responder)
-        {
-            if (CameraClass.getLastPicure() != null)
-                responder.Respond(CameraClass.getLastPicure());
-            if (CameraClass.camera.CameraReady)
-                CameraClass.camera.TakePicture();
-        }
-        */
+       
         void wifi_NetworkDown(GT.Modules.Module.NetworkModule sender, GT.Modules.Module.NetworkModule.NetworkState state)
         {
             Debug.Print("Network down event");
@@ -155,7 +90,7 @@ namespace GadgeteerApp3
             if (!wifi_RS21.Interface.IsLinkConnected)
                 return;
             //Create parameters and get the string body
-            Param[] parameters = new Param[2];
+            Param[] parameters = new Param[1];
             parameters[0] = new Param("gas", value.ToString());
             string postData = this.GetPostData(parameters);
 
@@ -165,6 +100,23 @@ namespace GadgeteerApp3
             buffers[0] = encoding.GetBytes(postData);
 
             SendHttp(buffers, "sendGas");
+        }
+
+        public void SendData(string param, string value, string url)
+        {
+            if (!wifi_RS21.Interface.IsLinkConnected)
+                return;
+            //Create parameters and get the string body
+            Param[] parameters = new Param[1];
+            parameters[0] = new Param(param, value);
+            string postData = this.GetPostData(parameters);
+
+            //Get the byte[]
+            System.Text.UTF8Encoding encoding = new System.Text.UTF8Encoding();
+            byte[][] buffers = new byte[1][];
+            buffers[0] = encoding.GetBytes(postData);
+
+            SendHttp(buffers, url);
         }
 
         private void SendHttp(byte[][] buffers, string uriMethod)
@@ -194,7 +146,14 @@ namespace GadgeteerApp3
 
             // Close stream 
             newStream.Close();
-            myRequest.GetResponse();
+            try
+            {
+                myRequest.GetResponse();
+            }
+            catch (Exception e)
+            {
+                Debug.Print(e.Message);
+            }
         }
 
         private string GetPostData(Param[] parameters)

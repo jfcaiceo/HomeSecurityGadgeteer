@@ -6,8 +6,6 @@ using GT = Gadgeteer;
 using GTM = Gadgeteer.Modules.GHIElectronics;
 using Gadgeteer.Modules.GHIElectronics;
 
-using Lzf;
-
 namespace GadgeteerApp3
 {
     public class Devices
@@ -16,8 +14,7 @@ namespace GadgeteerApp3
         GT.Timer t;
         Button button;
         Wifi wifi;
-        bool sending = false;
-        LZF lzf = new LZF();
+        const string bluetoothMessage = "accel";
 
         public Devices(Button button, Wifi wifi)
         {
@@ -58,47 +55,13 @@ namespace GadgeteerApp3
 
         void blueT_DataReceived(GT.Bluetooth sender, string data)
         {
-            if (sending)
+            if (!Scheduler.Instance().canContinue())
                 return;
-            if (data.Length < 1000)
-                return;
-            string[] array = data.Split("\n".ToCharArray());
-            int index = 0;
-            for (int i = 0; i < array.Length; i++)
+            int index = data.IndexOf(bluetoothMessage);
+            if (index > -1)
             {
-                if (array[i].Length > 1000)
-                    index = i;
+                wifi.SendData("device", data.Substring(index + bluetoothMessage.Length, data.Length - (index + bluetoothMessage.Length + 1)), "sendMovement");
             }
-            array[index] = array[index].TrimStart("#".ToCharArray());
-            sending = true;
-            Debug.Print("foto bloetooth");
-
-            byte[] picbyte = null;
-            if (array[index].IndexOf("pic") >= 0)
-            {
-                string pic = array[index].Substring(array[index].IndexOf("pic") + 3).Trim('\r').Trim('\n');
-
-                /*string len = pic.Substring(0, pic.IndexOf("pic"));
-                pic = pic.Substring(pic.IndexOf("pic") + 3);
-                int length = Int32.Parse(len);
-
-                byte[] input = Convert.FromBase64String(pic);
-                byte[] output = new byte[input.Length * 2];
-
-                int result = lzf.Decompress(input, length, output, output.Length);
-                picbyte = new byte[result];
-                for (int i = 0; i < result; i++)
-                    picbyte[i] = output[i];*/
-
-                picbyte = Convert.FromBase64String(pic);
-            }
-
-            Bitmap bmp = new Bitmap(picbyte, Bitmap.BitmapImageType.Jpeg);
-
-            GT.Picture pic2 = new GT.Picture(bmp.GetBitmap(), GT.Picture.PictureEncoding.BMP);
-
-            wifi.SendPictureData(pic2.PictureData, PhotoType.Devices.ToString());
-            sending = false;
         }
 
         void button_ButtonPressed(GTM.Button sender, GTM.Button.ButtonState state)

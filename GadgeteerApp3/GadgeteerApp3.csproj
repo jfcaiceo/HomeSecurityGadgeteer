@@ -46,7 +46,7 @@
     <Compile Include="CameraClass.cs" />
     <Compile Include="Devices.cs" />
     <Compile Include="Gas.cs" />
-    <Compile Include="LZF.cs" />
+    <Compile Include="Scheduler.cs" />
     <Compile Include="Wifi.cs" />
     <Compile Include="Program.generated.cs">
       <AutoGen>True</AutoGen>

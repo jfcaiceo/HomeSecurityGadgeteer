@@ -304,9 +304,7 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pe
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pe
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pe
@@ -322,9 +320,7 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pe
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pe
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pe
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pe
@@ -340,9 +336,7 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.Premium.System.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHI.Premium.USBHost.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Bluetooth.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Camera.pdbx
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Display_T35.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.GasSense.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Motion_Sensor.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.UsbClientDP.pdbx
@@ -358,9 +352,7 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.Premium.System.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHI.Premium.USBHost.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GHIElectronics.Gadgeteer.FEZSpider.pdbx
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Bluetooth.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Camera.pdbx
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Display_T35.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.GasSense.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Motion_Sensor.pdbx
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.UsbClientDP.pdbx
@@ -376,9 +368,7 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHI.Pre
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHI.Premium.System.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.dll
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.dll
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.dll
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.UsbClientDP.dll
@@ -399,12 +389,8 @@ G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHI.Pre
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHI.Premium.USBHost.xml
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.pdb
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GHIElectronics.Gadgeteer.FEZSpider.xml
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.pdb
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Bluetooth.xml
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.pdb
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Camera.xml
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.pdb
-G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Display_T35.xml
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.pdb
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.GasSense.xml
 G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Motion_Sensor.pdb
@@ -849,3 +835,17 @@ C:\Users\Bozz\Documents\Visual Studio 2012\Projects\HomeSecurityGadgeteer-master
 C:\Users\Bozz\Documents\Visual Studio 2012\Projects\HomeSecurityGadgeteer-master\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.dll
 C:\Users\Bozz\Documents\Visual Studio 2012\Projects\HomeSecurityGadgeteer-master\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.pdb
 C:\Users\Bozz\Documents\Visual Studio 2012\Projects\HomeSecurityGadgeteer-master\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.xml
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Button.pe
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.SerCam.pe
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Button.pe
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.SerCam.pe
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.Button.pdbx
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\LE\GTM.GHIElectronics.SerCam.pdbx
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.Button.pdbx
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\BE\GTM.GHIElectronics.SerCam.pdbx
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Button.dll
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.dll
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Button.pdb
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.Button.xml
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.pdb
+G:\Universidad\App Moviles\HomeSecurityGadgeteer\GadgeteerApp3\bin\Debug\GTM.GHIElectronics.SerCam.xml
