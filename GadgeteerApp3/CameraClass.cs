@@ -46,6 +46,7 @@ namespace GadgeteerApp3
             wifi.SendPictureData(picture.PictureData, PhotoType.Central.ToString());
             Debug.Print("foto");
             sendingPicture = false;
+            Scheduler.Instance().Working = false;
         }
 
         void motion_Sensor_Motion_Sensed(GTM.Motion_Sensor sender, GTM.Motion_Sensor.Motion_SensorState state)
@@ -59,6 +60,7 @@ namespace GadgeteerApp3
             timer.Start();
 
             sendingPicture = true;
+            Scheduler.Instance().Working = true;
             Debug.Print("nuevo motion sensor");
             camera.TakePicture();
         }

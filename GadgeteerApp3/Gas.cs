@@ -24,7 +24,7 @@ namespace GadgeteerApp3
 
         void _getReading_Tick(GT.Timer timer)
         {
-            if (!Scheduler.Instance().canContinue())
+            if (!Scheduler.Instance().gasContinue())
                 return;
             gs.SetHeatingElement(true);
             _preheat.Start();
@@ -35,6 +35,8 @@ namespace GadgeteerApp3
             _preheat.Stop();
 
             double gs1 = gs.ReadVoltage();
+            if (!Scheduler.Instance().gasContinue())
+                return;
             wifi.SendGasData(gs1);
             if (gs1 > maxGas)
             {

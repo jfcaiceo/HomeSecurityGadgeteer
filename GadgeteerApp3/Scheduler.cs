@@ -7,6 +7,7 @@ namespace GadgeteerApp3
     {
         static Scheduler scheduler;
         bool activate = false;
+        bool workingForGas = false;
 
         public static Scheduler Instance()
         {
@@ -20,6 +21,21 @@ namespace GadgeteerApp3
             if (!activate)
                 return false;
             return true;
+        }
+
+        public bool gasContinue()
+        {
+            if (!activate)
+                return false;
+            if (workingForGas)
+                return false;
+            return true;
+        }
+
+        public bool Working
+        {
+            get { return workingForGas; }
+            set { workingForGas = value; }
         }
 
         public bool getActivation()

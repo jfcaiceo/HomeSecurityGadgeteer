@@ -14,7 +14,7 @@ namespace GadgeteerApp3
     {
         private Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21;
         //public string host = "http://homesecurity-dev.herokuapp.com/";
-        public string host = "http://192.168.0.146:3000/";
+        public string host = "http://192.168.43.238:3000/";
         GT.Timer t;
 
         public Wifi(Gadgeteer.Modules.GHIElectronics.WiFi_RS21 wifi_RS21)
@@ -42,9 +42,9 @@ namespace GadgeteerApp3
 
             wifi_RS21.UseDHCP();
             GHI.Premium.Net.WiFiNetworkInfo[] info = null;
-            info = wifi_RS21.Interface.Scan("josef");
+            info = wifi_RS21.Interface.Scan("AndroidNexus");
 
-            wifi_RS21.Interface.Join(info[0], "marcela@$1980");
+            wifi_RS21.Interface.Join(info[0], "17533355k");
 
         }
 
@@ -52,7 +52,7 @@ namespace GadgeteerApp3
         {
             Debug.Print(wifi_RS21.Interface.NetworkInterface.IPAddress);
         }
-       
+
         void wifi_NetworkDown(GT.Modules.Module.NetworkModule sender, GT.Modules.Module.NetworkModule.NetworkState state)
         {
             Debug.Print("Network down event");
@@ -70,10 +70,11 @@ namespace GadgeteerApp3
                 return;
 
             //Create parameters and get the string body
-            Param[] parameters = new Param[3];
+            Param[] parameters = new Param[4];
             parameters[0] = new Param("filename", Guid.NewGuid() + ".bmp");
             parameters[1] = new Param("type", type);
-            parameters[2] = new Param("file");
+            parameters[2] = new Param("device", GetMACAddress(wifi_RS21.NetworkSettings.PhysicalAddress));
+            parameters[3] = new Param("file");
             string postData = this.GetPostData(parameters);
 
             //Get the byte[]
@@ -90,8 +91,9 @@ namespace GadgeteerApp3
             if (!wifi_RS21.Interface.IsLinkConnected)
                 return;
             //Create parameters and get the string body
-            Param[] parameters = new Param[1];
+            Param[] parameters = new Param[2];
             parameters[0] = new Param("gas", value.ToString());
+            parameters[1] = new Param("device", GetMACAddress(wifi_RS21.NetworkSettings.PhysicalAddress));
             string postData = this.GetPostData(parameters);
 
             //Get the byte[]
@@ -135,6 +137,7 @@ namespace GadgeteerApp3
             // Get length of content
             myRequest.ContentLength = count;
 
+
             // Get request stream 
             Stream newStream = myRequest.GetRequestStream();
 
@@ -146,6 +149,8 @@ namespace GadgeteerApp3
 
             // Close stream 
             newStream.Close();
+            myRequest.KeepAlive = false;
+
             try
             {
                 myRequest.GetResponse();
@@ -168,6 +173,22 @@ namespace GadgeteerApp3
                 }
             }
             return requestBody;
+        }
+
+        private string GetMACAddress(byte[] PhysicalAddress)
+        {
+            return ByteToHex(PhysicalAddress[0]) + "-"
+                                + ByteToHex(PhysicalAddress[1]) + "-"
+                                + ByteToHex(PhysicalAddress[2]) + "-"
+                                + ByteToHex(PhysicalAddress[3]) + "-"
+                                + ByteToHex(PhysicalAddress[4]) + "-"
+                                + ByteToHex(PhysicalAddress[5]);
+        }
+
+        private string ByteToHex(byte number)
+        {
+            string hex = "0123456789ABCDEF";
+            return new string(new char[] { hex[(number & 0xF0) >> 4], hex[number & 0x0F] });
         }
 
     }
